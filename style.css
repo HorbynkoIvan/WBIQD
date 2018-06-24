@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
 
 * {
@@ -12,7 +13,7 @@ li {
     display: flex;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -28,4 +29,28 @@ header {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+
+.header-container a {
+    color: black;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 27px 6px;
+    margin-right: 64px; /*70-6*/
+}
+
+.header-container a:hover {
+    background-color: #ffea00;
+}
+
+#menu-checkbox {
+    display: none;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+ul {
+    display: flex;
 }
