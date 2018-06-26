@@ -79,7 +79,8 @@ ul {
     font-size: 70px;
     padding: 0 13px;
 }
-.top-slide:nth-child(2){
+
+.top-slide:nth-child(2) {
     margin-bottom: 50px;
 }
 
@@ -92,6 +93,42 @@ ul {
 }
 
 /*section slider end*/
+
+/*section specialize*/
+.specialize-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.specialize h3 {
+    font-size: 35px;
+}
+
+.specialize-p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 65px;
+}
+
+.specialize-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+}
+
+.bottom-card {
+    background-color: #414146;
+}
+
+.bottom-card p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*section specialize end*/
 
 @media screen and (max-width: 420px) {
     .header-container {
