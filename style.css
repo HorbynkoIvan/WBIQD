@@ -145,6 +145,7 @@ ul {
     text-transform: uppercase;
     padding: 0 8px;
     margin-bottom: 30px;
+    margin-top: 60px;
 }
 
 .portfolio p {
@@ -180,6 +181,30 @@ ul {
 }
 
 /*section portfolio end*/
+
+/*section brand-slider*/
+.brands-slider {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brands-slider h4 {
+    background-color: #424147;
+    color: #f5e10a;
+    font-size: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 8px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.brands-slider p {
+    color: #717174;
+}
+
+/*section brand-slider end*/
 @media screen and (max-width: 420px) {
     .header-container {
         width: 100%;
@@ -279,6 +304,7 @@ ul {
         font-size: 20px;
         font-weight: bold;
     }
+
     .posts {
         display: grid;
         grid-template-columns: auto;
