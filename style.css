@@ -185,7 +185,7 @@ ul {
 /*section brand-slider*/
 .brands-slider {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     text-align: center;
 }
 
@@ -202,9 +202,69 @@ ul {
 
 .brands-slider p {
     color: #717174;
+    margin-bottom: 30px;
+}
+.slick-list{
+    margin: 0 25px;
+}
+.fa-angle-right, .fa-angle-left {
+    position: absolute;
+    z-index: 1;
+    top: 21%;
+    font-size: 2.5rem;
+    opacity: 0.6;
+}
+.fa-angle-right:hover, .fa-angle-left:hover {
+    opacity: 1;
+}
+.fa-angle-right{
+    right: 0;
+}
+.fa-angle-left {
+    left: 0;
 }
 
+/*.slick-prev,
+.slick-next {
+    font-size: 0;
+    position: absolute;
+    bottom: 20px;
+    color: #d5122f;
+    border: 0;
+    background: none;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 20px;
+}
+
+.slick-prev:after {
+    content: "\f104";
+    font: 40px/1 'FontAwesome';
+}
+
+.slick-next {
+    right: 20px;
+    text-align: right;
+}
+
+.slick-next:after {
+    content: "\f104";
+    font: 40px/1 'FontAwesome';
+}
+
+.slick-prev:hover:after,
+.slick-next:hover:after {
+    color: #7e7e7e;
+}*/
 /*section brand-slider end*/
+@media screen and (max-width: 1024px) {
+    .fa-angle-right, .fa-angle-left {
+        top: 10%;
+    }
+}
+
 @media screen and (max-width: 420px) {
     .header-container {
         width: 100%;
