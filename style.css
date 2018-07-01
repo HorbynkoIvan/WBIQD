@@ -204,9 +204,11 @@ ul {
     color: #717174;
     margin-bottom: 30px;
 }
-.slick-list{
+
+.slick-list {
     margin: 0 25px;
 }
+
 .fa-angle-right, .fa-angle-left {
     position: absolute;
     z-index: 1;
@@ -214,51 +216,54 @@ ul {
     font-size: 2.5rem;
     opacity: 0.6;
 }
+
 .fa-angle-right:hover, .fa-angle-left:hover {
     opacity: 1;
 }
-.fa-angle-right{
+
+.fa-angle-right {
     right: 0;
 }
+
 .fa-angle-left {
     left: 0;
 }
 
-/*.slick-prev,
-.slick-next {
-    font-size: 0;
-    position: absolute;
-    bottom: 20px;
-    color: #d5122f;
-    border: 0;
-    background: none;
-    z-index: 1;
-}
-
-.slick-prev {
-    left: 20px;
-}
-
-.slick-prev:after {
-    content: "\f104";
-    font: 40px/1 'FontAwesome';
-}
-
-.slick-next {
-    right: 20px;
-    text-align: right;
-}
-
-.slick-next:after {
-    content: "\f104";
-    font: 40px/1 'FontAwesome';
-}
-
-.slick-prev:hover:after,
-.slick-next:hover:after {
-    color: #7e7e7e;
-}*/
 /*section brand-slider end*/
+
+/*section footer*/
+footer {
+    background-color: #414146;
+    padding: 30px 0;
+    color: #ffffff;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 40% 25%;
+}
+
+.about-us a {
+    background-color: #000000;
+    border-bottom: 2px solid #eeda00;
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    margin: 35px 0 45px 0;
+    padding: 12px 17px;
+}
+
+.about-us_img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 2%;
+}
+.twitts img{
+    width: initial;
+}
+/*section footer end*/
 @media screen and (max-width: 1024px) {
     .fa-angle-right, .fa-angle-left {
         top: 10%;
