@@ -244,12 +244,15 @@ footer {
     display: grid;
     grid-template-columns: 35% 40% 25%;
 }
-.footer-container h4{
+
+.footer-container h4 {
     font-size: 18px;
 }
-.about-us p{
+
+.about-us p {
     margin-top: 20px;
 }
+
 .about-us a {
     background-color: #000000;
     border-bottom: 2px solid #eeda00;
@@ -266,25 +269,82 @@ footer {
     grid-column-gap: 2%;
     margin-top: 10px;
 }
-.about-us_img img{
+
+.about-us_img img {
     margin-top: 10px;
 }
 
-.tweets{
+.tweets {
     padding: 0 15px;
 
 }
-.tweets img{
+
+.tweets img {
     width: initial;
 
 }
-.tweets p{
+
+.tweets p {
     margin: 20px 0 30px 0;
     font-size: 13px;
 }
-.tweets span{
+
+.tweets span {
     color: #f5e10a;
 }
+
+.contacts-info {
+    margin-bottom: 50px;
+}
+
+.contacts address img {
+    width: initial;
+    margin-right: 15px;
+    margin-botom: 30px;
+    float: left;
+}
+
+.contacts div {
+    margin: 20px 0 30px 0;
+    font-size: 13px;
+}
+
+.contacts-email a {
+    color: #f5e10a;
+}
+
+.contacts-follow {
+    margin-bottom: 25px;
+}
+
+.contacts label {
+    cursor: pointer;
+    position: relative;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#email {
+    height: 30px;
+    width: 230px;
+    border: none;
+    border-bottom: 2px solid #ffea00;
+    background: transparent;
+    color: white;
+    caret-color: white;
+    padding-left: 10px;
+}
+
+#email:focus {
+    outline: none;
+}
+
+.email-icon {
+    width: initial;
+    position: absolute;
+    bottom: 0px;
+}
+
 /*section footer end*/
 @media screen and (max-width: 1024px) {
     .fa-angle-right, .fa-angle-left {
