@@ -66,6 +66,7 @@ nav {
 /*section slider*/
 .top-slide {
     background: url('img/slider_bg.jpg') no-repeat;
+	background-size: 100%;
     padding-top: 120px;
     padding-bottom: 300px;
 }
