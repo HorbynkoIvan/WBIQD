@@ -55,18 +55,19 @@ nav {
 }
 
 .main-menu {
-     display: flex;
- }
-.main-menu li{
-     display: flex;
- }
+    display: flex;
+}
+
+.main-menu li {
+    display: flex;
+}
 
 /*header end*/
 
 /*section slider*/
 .top-slide {
     background: url('img/slider_bg.jpg') no-repeat;
-	background-size: 100%;
+    background-size: 100%;
     padding-top: 120px;
     padding-bottom: 300px;
 }
@@ -256,7 +257,7 @@ footer {
     margin-top: 30px;
 }
 
-.about-us a {
+.about-us_btn {
     background-color: #000000;
     border-bottom: 2px solid #eeda00;
     display: inline-block;
@@ -265,11 +266,13 @@ footer {
     margin: 35px 0 45px 0;
     padding: 12px 17px;
 }
-.about-us a:hover {
+
+.about-us_btn:hover {
     background-color: #eeda00;
     border-bottom: 2px solid #000000;
     color: #000000;
 }
+
 .about-us_img {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -299,9 +302,11 @@ footer {
 .tweets span {
     color: #f5e10a;
 }
-.tweets-social_block{
+
+.tweets-social_block {
     margin: 10px 0;
 }
+
 .contacts-info {
     margin-bottom: 20px;
 }
@@ -372,6 +377,7 @@ footer {
     padding: 20px 0px;
     display: flex;
 }
+
 .footer-nav_container a:hover {
     color: #ffea00;
 }
@@ -387,6 +393,11 @@ footer {
 @media screen and (max-width: 1024px) {
     .fa-angle-right, .fa-angle-left {
         top: 10%;
+    }
+
+    .top-slide {
+        background-size: initial;
+
     }
 }
 
@@ -485,13 +496,82 @@ footer {
     }
 
     .toggles button {
-        margin: 10px 0;
+        margin: 20px auto;
         font-size: 20px;
         font-weight: bold;
+        display: block;
+    }
+
+    .toggles button:after {
+        content: '';
+    }
+
+    .toggles button:hover {
+        transition: padding-right 1s ease-out 0.5s;
+        font-weight: bold;
+        padding-right: 100px;
     }
 
     .posts {
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .footer-container {
+        grid-template-columns: auto;
+    }
+
+    .footer-container h4 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .about-us_btn {
+        margin: 40px auto;
+        text-align: center;
+        display: block;
+        width: 50%;
+    }
+
+    .about-us_img {
+        grid-template-columns: auto auto;
+        grid-column-gap: 4%;
+        margin: 20px 0;
+    }
+
+    .tweets {
+        padding: 0;
+    }
+
+    .tweets p {
+        margin: 20px 0 10px 0;
+    }
+
+    .tweets-social {
+        margin: 20px 0;
+    }
+
+    .tweets-social_block {
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
+    .contacts div {
+        font-size: 16px;
+    }
+
+    .email {
+        display: none
+    }
+
+    .footer-nav {
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .footer-main_menu {
+        display: grid;
     }
 }
