@@ -18,26 +18,26 @@
     <title>WBIQD</title>
 </head>
 <body>
-<header>
+<header id="header">
     <div class="header-container">
         <div class="logo">
-            <img src="img/LOGO.png" alt="logo">
+            <img id="header-img" src="img/LOGO.png" alt="logo">
         </div>
         <input type="checkbox" id="menu-checkbox"/>
-        <nav role="navigation">
+        <nav id="nav-bar" role="navigation">
             <label for="menu-checkbox" class="toggle-button"
                    data-open="MENU" data-close="CLOSE" onclick=""></label>
             <ul class="main-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a class="nav-link" href="#blog">Blog</a></li>
+                <li><a class="nav-link" href="#about-us">About us</a></li>
+                <li><a class="nav-link" href="#contacts">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<main>
+<main id="home">
     <section class="top-slide">
         <div class="top-container">
             <div>
@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <h4>Our projects</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
         <div class="toggles">
@@ -121,6 +121,14 @@
             <div class="post graficdesign"><img src="img/Portfolio-work-110.jpg" alt="5"></div>
         </div>
     </section>
+    <section id="blog">
+        <h4>Videoblog</h4>
+        <div>
+            <iframe id="video" height="315"
+                    src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
     <section class="brands-slider">
         <h4>Our clients</h4>
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
@@ -138,7 +146,7 @@
 </main>
 <footer>
     <div class="footer-container">
-        <div class="about-us">
+        <div id="about-us" class="about-us">
             <h4>About Us</h4>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
                 sed diam nonummy nibh euismod tincidunt ut
@@ -185,7 +193,7 @@
                 <img src="img/footer_img/flickr.jpg" alt="">
             </div>
         </div>
-        <div class="contacts">
+        <div id="contacts" class="contacts">
             <h4 class="contacts-info">Contact info</h4>
             <address>
                 <div>
@@ -205,12 +213,13 @@
             <h4 class="contacts-follow">Follow Us</h4>
             <p>Lorem Ipsum is simply dummy text of the printing
                 and typesetting industry.</p>
-            <div class="email">
+            <form id="form" class="email">
                 <label for="email">
-                    <input id="email" type="text">
-                    <img class="email-icon" src="img/footer_img/email-icon.jpg" alt="">
+                    <input id="email" placeholder="e-mail" type="email">
+                    <input id="submit" type="submit" value="Get Started" class="btn"></input>
                 </label>
-            </div>
+
+            </form>
         </div>
     </div>
     <div class="footer-nav">
@@ -230,5 +239,7 @@
         crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="./js/test.js"></script>
 </body>
 </html>

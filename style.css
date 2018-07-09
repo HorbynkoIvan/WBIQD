@@ -21,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-header {
+#header {
     width: 100%;
     background-color: #f6f6f6;
     padding: 22px 0;
@@ -50,7 +50,7 @@ header {
     display: none;
 }
 
-nav {
+#nav-bar {
     margin-top: 20px;
 }
 
@@ -185,7 +185,30 @@ nav {
 }
 
 /*section portfolio end*/
+#blog {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
 
+#blog h4 {
+    background-color: #424147;
+    color: #f5e10a;
+    font-size: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 8px;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+#video {
+    display: inline-block;
+}
+
+/*section blog*/
+
+/*section blog end*/
 /*section brand-slider*/
 .brands-slider {
     width: 90%;
