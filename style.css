@@ -20,6 +20,7 @@ li {
 a {
     text-decoration: none;
 }
+
 .btn {
     background-color: #000000;
     border-bottom: 2px solid #eeda00;
@@ -29,17 +30,18 @@ a {
     margin: 35px 0 45px 0;
     padding: 12px 17px;
 }
+
 .btn:hover {
     background-color: #eeda00;
     border-bottom: 2px solid #000000;
     color: #000000;
 }
 
-
 #header {
     width: 100%;
     background-color: #f6f6f6;
-    padding: 22px 0;
+    position: fixed;
+    top: 0;
 }
 
 .header-container {
@@ -61,12 +63,18 @@ a {
     background-color: #ffea00;
 }
 
+.logo img {
+    margin-top: 5px;
+    max-height: 68px;
+    max-width: 68px;
+}
+
 #menu-checkbox {
     display: none;
 }
 
 #nav-bar {
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .main-menu {
@@ -80,11 +88,16 @@ a {
 /*header end*/
 
 /*section slider*/
+#home {
+    margin-top: 70px;
+}
+
 .top-slide {
     background: url('img/slider_bg.jpg') no-repeat;
     background-size: 100%;
     padding-top: 120px;
-    padding-bottom: 300px;
+    /*padding-bottom: 300px; */
+    padding-bottom: 200px;
 }
 
 .top-container {
@@ -359,10 +372,12 @@ footer {
     margin-top: 15px;
     display: inline-block;
 }
-#form div{
+
+#form div {
     overflow: hidden;
     padding-right: .5em;
 }
+
 #email {
     height: 30px;
     /*width: 230px;*/
@@ -379,16 +394,17 @@ footer {
     outline: none;
 }
 
-#submit{
+#submit {
     float: right;
     background-color: #000000;
-    border:none;
+    border: none;
     border-bottom: 2px solid #eeda00;
     color: #ffffff;
     height: 32px;
     width: 20%;
 }
-#submit:hover{
+
+#submit:hover {
     color: #eeda00;
 }
 
@@ -440,12 +456,15 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-
+    #nav-bar {
+        margin-top: 10px;
+    }
     .main-menu {
         display: none;
         position: relative;
         top: 21px;
         right: 145px;
+        padding-bottom: 20px;
     }
 
     .main-menu li {
@@ -457,6 +476,9 @@ footer {
     .main-menu li a {
         display: block;
         padding: 8px;
+    }
+    #home {
+        margin-top: 40px;
     }
 
     .toggle-button {
@@ -559,7 +581,7 @@ footer {
         font-size: 25px;
     }
 
-    .about-us_btn {
+    .btn {
         margin: 40px auto;
         text-align: center;
         display: block;
