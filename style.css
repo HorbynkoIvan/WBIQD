@@ -359,10 +359,14 @@ footer {
     margin-top: 15px;
     display: inline-block;
 }
-
+#form div{
+    overflow: hidden;
+    padding-right: .5em;
+}
 #email {
     height: 30px;
-    width: 230px;
+    /*width: 230px;*/
+    width: 100%;
     border: none;
     border-bottom: 2px solid #ffea00;
     background: transparent;
@@ -375,10 +379,17 @@ footer {
     outline: none;
 }
 
-.email-icon {
-    width: initial;
-    position: absolute;
-    bottom: 0px;
+#submit{
+    float: right;
+    background-color: #000000;
+    border:none;
+    border-bottom: 2px solid #eeda00;
+    color: #ffffff;
+    height: 32px;
+    width: 20%;
+}
+#submit:hover{
+    color: #eeda00;
 }
 
 .footer-nav {
@@ -584,7 +595,7 @@ footer {
         font-size: 16px;
     }
 
-    .email {
+    .form {
         display: none
     }
 
