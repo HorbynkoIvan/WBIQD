@@ -12,29 +12,6 @@ $(function () {
     })
 });
 
-
-/*$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            420:{
-                items:4
-            },
-            1000:{
-                items:8
-            }
-        }
-    });
-});*/
-/*
-chevron-circle-right
-*/
-
 $(document).ready(function () {
     $('.brands-carousel').slick({
         slidesToShow: 7,
