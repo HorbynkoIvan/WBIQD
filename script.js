@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
     //the block below for categories webdevelopment, webdesign, graficdesign
     $('.toggles button').click(function () {
         var get_id = this.id;
@@ -10,9 +10,8 @@ $(function () {
     $('#showall').click(function () {
         $('.post').show(500);
     })
-});
 
-$(document).ready(function () {
+//the block below settings for slick carousel
     $('.brands-carousel').slick({
         slidesToShow: 7,
         slidesToScroll: 1,
