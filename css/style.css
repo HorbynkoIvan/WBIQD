@@ -106,6 +106,7 @@ a {
 
 .top-slide h2 {
   background-color: #ffea00;
+  display: inline;
   font-size: 70px;
   padding: 0 13px;
 }
