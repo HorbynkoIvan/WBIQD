@@ -1,15 +1,19 @@
-var gulp = require('gulp'), // Подключаем Gulp
-    sass = require('gulp-sass'); // Подключаем Sass пакет
+global.$ = {
+    gulp: require('gulp'),
+    gp: require('gulp-load-plugins')(),
+    browserSync: require('browser-sync').create(),
+    del: require('del'),
+    imageminJpegRecompress: require('imagemin-jpeg-recompress'),
+    pngquant: require('imagemin-pngquant'),
+    path: {
+        config: require('./gulp/config'),
+        jquery: './js/jquery.js',
+        js: './js/**/*.js',
+    }
+};
 
-gulp.task('sass', function () { // Создаем таск "sass"
-    return gulp.src(['sass/**/*.sass', 'sass/!**/!*.scss']) // Берем источник
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError)) // Преобразуем Sass в CSS посредством gulp-sass
-        .pipe(gulp.dest('css')) // Выгружаем результата в папку css
-});
-
-gulp.task('watch', function () {
-    gulp.watch(['sass/**/*.sass', 'sass/!**/!*.scss'], ['sass']); // Наблюдение за sass файлами в папке sass
-});
-
-gulp.task('default', ['watch']);
+//use loop for connecting all tasks
+$.path.config.forEach(function(path) {
+    require(path)()
+})
 
